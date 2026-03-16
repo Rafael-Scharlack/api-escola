@@ -1,4 +1,4 @@
-package br.com.fiap.api_escola.controllers; // Ajuste o pacote se necessário
+package br.com.fiap.api_escola.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
