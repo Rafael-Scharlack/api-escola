@@ -30,7 +30,7 @@ Esta é a forma recomendada para avaliação/correção.
 ### 1. Baixe a imagem
 
 ```bash
-docker pull gustavooda/api-escola:latest
+docker pull rscharlack/api-escola:latest
 ```
 
 ### 2. Suba um banco MySQL com o schema já criado
@@ -60,7 +60,7 @@ docker run -d \
   -e DB_NAME=api_escola \
   -e DB_USER=root \
   -e DB_PASSWORD=root \
-  gustavooda/api-escola:latest
+  rscharlack/api-escola:latest
 ```
 
 > Alternativa equivalente usando Docker Compose:
@@ -134,14 +134,14 @@ A API estará disponível em `http://localhost:8080` (Swagger na mesma URL).
 
 ```bash
 # build local da imagem
-docker build -t gustavooda/api-escola:latest .
+docker build -t rscharlack/api-escola:latest .
 
 # testar localmente antes de publicar
-docker run -p 8080:8080 -e SPRING_PROFILES_ACTIVE=default gustavooda/api-escola:latest
+docker run -p 8080:8080 -e SPRING_PROFILES_ACTIVE=default rscharlack/api-escola:latest
 
 # publicar no Docker Hub
 docker login
-docker push gustavooda/api-escola:latest
+docker push rscharlack/api-escola:latest
 ```
 
 ---

@@ -25,7 +25,7 @@ services:
 
   app:
     # Troque pela imagem publicada, ex: seuusuario/api-escola:latest
-    image: gustavooda/api-escola:latest
+    image: rscharlack/api-escola:latest
     container_name: api-escola-prd
     depends_on:
       mysql:
